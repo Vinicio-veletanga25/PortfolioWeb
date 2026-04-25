@@ -45,7 +45,7 @@ class ProjectCard extends HTMLElement {
 
     const imgSrc  = showImage ? this._ghImage(url) : null;
     const imgHtml = imgSrc
-      ? `<div class="overflow-hidden bg-muted">
+      ? `<div class="">
            <img src="${imgSrc}" alt="${this._esc(name)}" loading="lazy"
                 class="h-auto w-full object-contain transition-transform duration-300 hover:scale-105">
          </div>`

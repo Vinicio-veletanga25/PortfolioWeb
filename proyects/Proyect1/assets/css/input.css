@@ -35,12 +35,21 @@ body {
     linear-gradient(180deg, rgba(14, 18, 28, 0.98), rgba(20, 24, 36, 1));
   min-height: 100vh;
 }
+
 .darkProj2{
   @apply bg-background text-foreground font-sans antialiased;
   background-image:
     radial-gradient(circle at 15% 20%, rgba(255, 211, 101, 0.18), transparent 30%),
     radial-gradient(circle at 85% 15%, rgba(24, 174, 201, 0.14), transparent 30%),
     linear-gradient(180deg, rgba(92, 62, 210, 0.776), rgb(101, 92, 19)); 
+  min-height: 100vh;
+}
+.darkProj3{
+  @apply bg-background text-foreground font-sans antialiased;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(145, 58, 55, 0.18), transparent 30%),
+    radial-gradient(circle at 85% 15%, rgba(24, 174, 201, 0.14), transparent 30%),
+    linear-gradient(180deg, rgba(21, 173, 47, 0.687), rgb(28, 141, 202)); 
   min-height: 100vh;
 }
 
