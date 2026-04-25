@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Mona Sans";
+  src: url("../fonts/Mona-Sans.woff2") format("woff2 supports variations"),
+    url("../fonts/Mona-Sans.woff2") format("woff2-variations");
+  font-display: swap;
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+img {
+  display: flex;
+
+}
+
+.article-link {
+  display: block;
+} 
+
+.card-flip-iner{
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style:preserve-3d;
+}
+.card-flip:hover .card-flip-iner{
+  transform: rotateY(180deg);
+}
+
+.card-flip-front, .card-flip-back{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+ 
+
+.card-flip-back{
+  position: absolute;
+  top: 0; 
+  width: 100%;
+  height: 30%; 
+  transform: rotateY(180deg); 
+}
+
+.article-card {
+  border: 1px solid rgb(var(--border) / 0.7);
+  border-radius: 1rem;
+  background: rgb(var(--card) / 0.72);
+  padding: 1.5rem;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.article-card:hover {
+  border-color: rgb(var(--primary) / 0.5);
+  box-shadow: 0 20px 60px rgba(91, 120, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+*{
+  box-sizing: border-box;
+}
+  
+
+.seccionPrese {  
+  display: flex;
+  flex-wrap: wrap;    
+}
+@media screen and (max-width:700px){
+   .seccionPrese , .sectionPortada{
+    flex-direction: column;
+   } 
+}
+
+ .set1Text    {       
+  color: antiquewhite;  
+  flex: 20%; 
+  padding: 10%;
+  text-align: center;   
+  font-size: 120%;
+   
+  
+} 
+
+
+.imgPrese{ 
+  border-radius: 30px;  
+  flex: 40%;   
+  float: right; 
+  display: flex;
+  
+}
+.imgPrese:hover{ 
+  border-radius: 30px;  
+  flex: 60%;   
+  float: right;  
+  display: flex;
+  
+}
+
+.sectionPortada
+{ 
+  display: flex;
+  flex-wrap: wrap;   
+   
+} 
+
+
+.sectionPortada .setPort1    {  
+  text-align: center;
+  color: antiquewhite; 
+  border-radius: 10px;  
+  flex: 20%;
+  height: 500px; 
+  
+} 
+.sectionPortada .setPort2    {  
+  color: antiquewhite; 
+  border-radius: 10px;   
+  height: 500px; 
+  
+}
+
+ .imgPort1{  
+  flex: 40%;  
+  border-radius: 100px;    
+  width:70%; 
+  height: 90%;
+  background-size: cover; 
+} 
+ .imgPort2{   
+  
+  flex: 80%;  
+  border-radius: 30px;    
+  width:100%; 
+  height: 100%; 
+  background-size: cover; 
+
+} 
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: rgb(var(--muted-foreground));
+  font-size: 0.875rem;
+}
+
+.article-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.article-arrow {
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  color: rgb(var(--muted-foreground));
+}
+ 
+.article-link:hover .article-arrow, 
+.article-link:hover .article-title {
+  color: rgb(var(--primary));
+}
+
+.article-title {
+  transition: color 180ms ease;
+}
+
+@media (max-width: 640px) {
+  .article-card {
+    padding: 1.25rem;
+  }
+}
+
+/* Web components — base rendering antes de que JS los actualice */
+project-card,
+projects-grid,
+article-card,
+site-nav,
+site-footer,
+section-header,
+social-links {
+  display: block;
+}
+
+/* Permitir ocultación via atributo hidden en web components
+   (el display:block de autor sobreescribe el [hidden] del user-agent) */
+project-card[hidden],
+article-card[hidden] {
+  display: none;
+}
