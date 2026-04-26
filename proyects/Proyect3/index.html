@@ -25,8 +25,9 @@
   <link rel="stylesheet" href="../Proyect1/assets/css/style.css?v=2026.1" />
   <link rel="stylesheet" href="../Proyect1/assets/css/main.css" /> 
   <link rel="stylesheet" href="../Proyect1/assets/css/input.css" /> 
-   
-<script src="../Proyect1/" defer></script>
+    <!-- Font Awesome (iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <script src="../Proyect1/components/site-nav.js" defer></script>
   <script src="../Proyect1/components/site-footer.js" defer></script>
   <script src="../Proyect1/components/section-header.js" defer></script>
@@ -35,8 +36,44 @@
   <script src="../Proyect1/components/article-card.js" defer></script>
   <script src="../Proyect1/components/articles.js" defer></script>
 
-  <title>Sicaf accounting module Odoo for an ERP system with Python</title>
+  <title>Automation with Python Geopandas and ArcMap</title>
+   <style>
+        
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .icon {
+            font-size: 40px;
+            color: #1e3a8a;
+            min-width: 60px;
+        }
+
+        .content h3 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: bold;
+            color: #111;
+        }
+
+        .content p {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #eae2e2;
+            line-height: 1.5;
+        }
+    </style>
 </head>
+
 <body class="darkProj3"> 
      
   <main class="overflow-hidden">
@@ -45,65 +82,111 @@
 
     
     <!-- Hero -->
-    <section class="relative flex min-h-screen items-center justify-center overflow-hidden px-4 pb-20 pt-20 md:px-6">
-      <div class="absolute inset-0 -z-10">
-        <div class="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-primary/20 blur-3xl opacity-40"></div>
-        <div class="absolute bottom-0 right-1/4 h-96 w-96 rounded-full bg-secondary/20 blur-3xl opacity-40"></div>
-      </div>
-
+    <section class="fondoSection1">
+      
       <div class="container mx-auto px-4 md:px-6">
 
         <div class="mx-auto max-w-4xl space-y-8 text-center">
 
-          <div class="space-y-4">
+          <div >
             <h1 class="text-balance text-5xl font-bold leading-tight md:text-7xl">
-              <span class="text-foreground">Accounting module for the Sicaf ERP system </span>
+         
               <span class="gradient-shift bg-gradient-to-r from-primary 
               via-secondary to-primary bg-clip-text 
-              text-transparent">Frontend &amp; Odoo and Python with Docker</span>
-            </h1>
-            
-            <div class="sectionPortada">
-              
-             <project-card 
-              image="../Proyect1/assets/images/moduleOdoo.png" 
-            style="height: 600px;  width:800px; " class="CardService">
-            </project-card>
-             
-            </div>
-               
-            
-
-             
+              text-transparent">Automation and correction of geographic drawing to visualize in ArcMap. Python &amp; Arcmap and Geopandas</span>
+            </h1> 
           </div>
- 
- 
-
-           
         </div>
       </div>
     </section>
  
     <section id="sectionProble">
-      <section-header
-          heading="Problematic"
-         ></section-header>
+        
+      <section-header heading="Problematic"></section-header>
+               <section class="fondoProblemGeo"> 
+                
+              </section>
 
-            <div class="seccionPrese"> 
+            <div class="seccionPresP3"> 
+              
               <div class="set1Text">
                 <p >
-                    The processing time for employee salary payments was a very long process, and it takes a lot of time, due to the lack of management of the employees, their salaries, and days with attended hours.
+                    The updates of geographic information become a bottleneck that affects project deadlines, consuming more hours in repetitive tasks, since generating it manually can create inconsistencies, but in large quantities it becomes difficult to correct.
                 </p>  
               </div> 
                
-              <div class="imgPrese">
-                <img    src="../Proyect1/assets/images/modulePagos.png " alt="Avatar2" > 
-                </div>
+              <div class="imgArcgisPro">
+                <div class="container">
 
+                  <div class="item">
+                      <div class="icon">
+                          <i class="fas fa-crosshairs"></i>
+                      </div>
+                      <div class="content">
+                          <h3>Inaccuracy in geolocation</h3>
+                          <p>
+                              The geospatial drawings present displacements, topological errors, or inconsistencies with reality.
+                          </p>
+                      </div>
+                  </div>
 
-               
+                  <div class="item">
+                      <div class="icon">
+                          <i class="fas fa-arrows-rotate"></i>
+                      </div>
+                      <div class="content">
+                          <h3>Manual correction in ArcGIS</h3>
+                          <p>
+                              The correction is carried out vertex by vertex, adjusting geometries, vertices, attributes, and spatial relationships manually.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <div class="icon">
+                          <i class="fas fa-hourglass-half"></i>
+                      </div> 
+                      <div class="content">
+                          <h3>High time consumption</h3>
+                          <p>
+                              The manual process is repetitive and tedious, especially in layers with high geometric complexity or large territorial extent.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <div class="icon">
+                          <i class="fas fa-users"></i>
+                      </div>
+                      <div class="content">
+                          <h3>Impact on productivity</h3>
+                          <p>
+                              Delays in the delivery of updated information, reprocessing, and greater operational load for the technical team.
+                          </p>
+                      </div>
+                  </div>
+
+                  </div>
+              </div>
+
+               <div >
+                <p >
+                    <h1>
+                     Average times on repetitive tasks
+                    </h1> 
+                    <div></div>
+                    <div class="imgTareasGeo">
+                      <img src="../Proyect1/assets/images/procesoTiempogeoArcgis.png" alt="">
+
+                    </div>
+ 
+                </p>  
+              </div>  
             </div>
 
+            
+             
+            
             
             </section>
 
@@ -113,7 +196,7 @@
       <div class="container mx-auto max-w-6xl">
         <section-header
           heading="My solution"
-          sub="An accounting module is developed for the Sicaf financial system, allowing the import of files with a large amount of data on employee attendance, to subsequently apply business logic and manage in this way the payments for work attendance."
+          sub="Automatic geolocation correction with Python's GeoPandas, applying the loading validations of reference points or states, correcting and geometrically adjusting the large amount of data loaded by layers provided by the company, improving data accuracy by coordinates for network management applications and components of the electrical system."
         ></section-header>
 
  
@@ -123,37 +206,33 @@
 
             <div class="card-flip-iner">
               <div class="card-flip-front">
-                <h2>Requeriments for module</h2>
-                <project-card></project-card>
+                 <h1 style="color: aliceblue;">Requeriments to load</h1>
               </div>
               <div class="card-flip-back" >
                  <project-card
                   name="The requeriments for module"
                   description="The respective meetings are held with the user who owns the Sicaf system to obtain information about the requirements of the accounting module, where we carry out oriented programming."
-                  image="../Proyect1/assets/images/requerimentOdoo.png" 
+                  image="../Proyect1/assets/images/infoGeo.jpg" 
                 > </project-card>
               </div> 
             </div>
           </div>   
 
           
+          
           <div class="card-flip"> 
 
             <div class="card-flip-iner">
               <div class="card-flip-front">
-
-                <h2>Download and deployment of Docker images</h2>
-                <project-card
-                
-            > </project-card> 
-
+                 <h1 style="color: aliceblue;"> Software development in Python</h1>
+                  
               </div>
               
               <div class="card-flip-back" >
                 <project-card
                 name="Implement Docker Compose for the deployment of Odoo "
                 description="Docker is installed to deploy the Odoo and PostgreSQL images, configuring the libraries compatible with ERP systems."
-                image="../Proyect1/assets/images/esquemaDocker.png" 
+                image="../Proyect1/assets/images/resultgeopandas1.png" 
             
             > </project-card> 
               </div> 
@@ -164,19 +243,15 @@
            <div class="card-flip">  
             <div class="card-flip-iner">
               <div class="card-flip-front">
-
-                <h2>Development of the accounting module in Odoo</h2>
-                <project-card
-                
-            > </project-card> 
-
+                 <h1 style="color: aliceblue;"> Visualization of modified files in ArcMap software</h1>
+                  
               </div>
               
               <div class="card-flip-back" >
                 <project-card
             name="Implement the accounting business logic in the Odoo module"
             description="The accounting module is developed based on the requirements and the implemented business logic, showing significant progress in each meeting. Where we make some verifications and corrections, so that the salary is paid correctly."
-            image="../Proyect1/assets/images/ImagenesVuforiatarg.png" 
+            image="../Proyect1/assets/images/resultgeopandas2.png" 
           > </project-card>
               </div> 
             </div>
@@ -186,24 +261,19 @@
                         <div class="card-flip-iner">
                           <div class="card-flip-front">
 
-                <h2>Data upload on employee work attendance</h2>
-                <project-card
+                <h1  style="color: aliceblue;">Export the results and reports.</h1>
                 
-            > </project-card> 
-
               </div>
               
               <div class="card-flip-back" >
                 <project-card
             name="Python libraries are set up for loading data from Excel files in the accounting module."
             description="The respective library imports are carried out, such as pandas, for the extraction of large amounts of data from files like Excel and CSV. Allowing the automatic validation of the monthly payment process for work attendance."
-            image="../Proyect1/assets/images/hojaCarga.png" 
+            image="../Proyect1/assets/images/resultgeopandas2.png" 
           > </project-card>
               </div> 
             </div>
           </div> 
-           
- 
            
  
         </div>
@@ -216,13 +286,15 @@
       <div class="container mx-auto max-w-6xl">
         <section-header
           heading="My Results"
-          sub="A mobile application is developed for mobile devices, based on research on the selected culture. An environment similar to the myth or legend is developed to manage events and communication through Microservices and Unity, digital technology such as VuforiaEngine augmented reality for camera interaction with its configured tag tracking, validating the data in C# and Postman, which allows us to consume backend microservices to interact with 3D objects."
+          sub="A Python code is generated for the automation for the correction and creation of shapefiles with geographic data, and visualizing its results, obtaining advantages such as reproducible and automatic, scalable to thousands/millions of
+           points, traceable, easy to integrate into workflows and automations."
         ></section-header>
         
+        
           <project-card 
-            name="Development of virtual environment and UI interface for the Movily application, consuming microservices"
-            description="The software development is based on the C# language and the Frontend is implemented with Unity and Vuforia Engine, creating 3D Objects for communication."
-            image="assets/images/finalGame.gif" 
+            name="By implementing the capabilities on ARGIS, the results and progress are visualized in the ARCMap software"
+            description="The configurations are made for a better visualization of the results and corrections carried out, the same ones that are used to demonstrate the requirements met."
+            image="../Proyect1/assets/images/resultgeopandas2.png" 
             style="height: 600px;  width:800px; "
           > </project-card>
 

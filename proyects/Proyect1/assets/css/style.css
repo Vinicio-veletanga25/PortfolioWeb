@@ -7,6 +7,22 @@
   font-stretch: 75% 125%;
 }
 
+.fondoSection1{ 
+  
+background-image: url("../images/logoproyect3.png"); 
+background-repeat: no-repeat;
+background-size: cover;  
+
+
+}
+.fondoProblemGeo{
+background-image: url("../images/problematicaArcMap.png"); 
+background-repeat: no-repeat;
+background-size: cover;
+height: 400px;
+padding: 10px; 
+
+}
 body {
   overflow-x: hidden;
 }
@@ -90,7 +106,43 @@ img {
   float: right; 
   display: flex;
   
+  
 }
+
+.imgTareasGeo{ 
+  border-radius: 30px;   
+  float: right; 
+  width: 900px;
+  height: 500px;
+  background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+
+  
+  
+}
+.seccionPresP3{
+   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.set1TextPres:nth-child(2) {
+  flex-grow: 1;
+   color: antiquewhite;  
+  flex: 20%; 
+  padding: 10%;
+  text-align: center;   
+  font-size: 120%;
+}
+
+.imgArcgisPro{ 
+  border-radius: 30px;  
+  flex: 40%;   
+  float: right; 
+  display: flex;
+  
+}
+
 .imgPrese:hover{ 
   border-radius: 30px;  
   flex: 60%;   
