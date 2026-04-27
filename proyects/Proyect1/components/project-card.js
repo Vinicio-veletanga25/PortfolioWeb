@@ -72,7 +72,7 @@ class ProjectCard extends HTMLElement {
         <p class="flex-1 text-sm text-muted-foreground">${this._esc(description)}</p>
         <div class="flex flex-wrap gap-2">${tagsHtml}</div>
 
-        <img   src="${this._esc(image)}" alt="Avatar" style="height: 500px; justify-content: center; width:700px; border-radius: 30px; display: flex; margin: auto;">
+        <img   src="${this._esc(image)}" alt="Avatar" style="height: 100%; justify-content: center; width: 100%;   ">
           
         </a>
       </div>`;

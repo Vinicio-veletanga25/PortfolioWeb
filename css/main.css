@@ -731,7 +731,7 @@ h6 {
 #skills .container .div-card .docker {
   background-image: url("../img/icon/docker.png");
 }
-#skills .container .div-card .devops {
+#skills .container .div-card .devops { 
   background-image: url("../img/icon/devops.png");
   
 }

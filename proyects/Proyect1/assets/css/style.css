@@ -13,13 +13,21 @@ background-image: url("../images/SegundoCorte.gif");
 background-repeat: no-repeat;
 background-size: cover;   
 height: 900px;
-padding: 20%; 
-justify-content: center;
+padding: 20%;  
+width: auto; 
+flex: 10%;
 
 } 
 @media screen and (max-width:700px){
    .fondoSection1{
     flex-direction: column;
+   } 
+}
+@media screen and (max-width:500px){
+   .fondoSectionAR{
+    background-size: contain;  
+    height: 400px;
+padding: 10px; 
    } 
 }
 
@@ -59,15 +67,23 @@ img {
   transition: transform 0.6s;
   transform-style:preserve-3d;
   display: flex;
-  height: 50%;
-  width: 80%;
-  flex: 20%;
+  height: 500px;
+  width: auto;
+  flex: 20%; 
 }
 .card-flip:hover .card-flip-iner{
   transform: rotateY(180deg);
+  
+  width: 100%;
+  height: 500px;   
+  padding: 10%;
+  
+  transform-style:preserve-3d;
 }
 
 .card-flip-front, .card-flip-back{
+  
+  transform-style:preserve-3d;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; 
   display: flex;
@@ -80,12 +96,14 @@ img {
  
 
 .card-flip-back{
-  position: absolute;
-  
+  position: absolute; 
   top: 0; 
   width: 100%;
-  height: 30%; 
+  height: auto;  
+  display: flex; 
+  flex: 20%;
   transform: rotateY(180deg); 
+
 }
 
 .article-card {
@@ -131,8 +149,7 @@ img {
 .imgPrese{ 
   border-radius: 30px;  
   flex: 40%;   
-  float: right; 
-  display: flex;
+  
   
   
 }
@@ -187,10 +204,8 @@ text-align: center;
 }
 
 .imgPrese:hover{ 
-  border-radius: 30px;  
-  flex: 60%;   
-  float: right;  
-  display: flex;
+  border-radius: 30px;   
+  float: right;   
   
 }
 
