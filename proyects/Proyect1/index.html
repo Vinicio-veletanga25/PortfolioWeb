@@ -42,53 +42,26 @@
 
     <site-nav></site-nav>
 
-    
-    <!-- Hero -->
-    <section class="relative flex min-h-screen items-center justify-center overflow-hidden px-4 pb-20 pt-20 md:px-6">
-      <div class="absolute inset-0 -z-10">
-        <div class="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-primary/20 blur-3xl opacity-40"></div>
-        <div class="absolute bottom-0 right-1/4 h-96 w-96 rounded-full bg-secondary/20 blur-3xl opacity-40"></div>
-      </div>
 
+
+    <section class="fondoSectionAR">
+      
       <div class="container mx-auto px-4 md:px-6">
 
         <div class="mx-auto max-w-4xl space-y-8 text-center">
 
-          <div class="space-y-4">
+          <div >
             <h1 class="text-balance text-5xl font-bold leading-tight md:text-7xl">
-              <span class="text-foreground">Realidad Aumentada </span>
-              <span class="gradient-shift bg-gradient-to-r from-primary 
+              
+             <span class="gradient-shift bg-gradient-to-r from-primary 
               via-secondary to-primary bg-clip-text 
-              text-transparent">Frontend &amp; Unity and Vuforia Engine</span>
-            </h1>
-            
-            <div class="sectionPortada">
-              
-            <div class="setPort1" >
-              
-            <img  class="imgPort1" src="assets/images/video.gif" alt="Avatar"    >
-                
-            </div>
-
-             <div class="setPort2">
-              
-            <img  class="imgPort2"  src="assets/images/menuApp.png" alt="Avatar"    >
-                
-            </div>
-            
-            </div>
-               
-            
-
-             
+              text-transparent">Realidad Aumentada with Frontend &amp; Unity and Vuforia Engine</span>
+            </h1> 
           </div>
- 
- 
-
-           
         </div>
       </div>
     </section>
+     
  
     <section id="sectionProble">
       <section-header
@@ -98,7 +71,11 @@
             <div class="seccionPrese"> 
               <div class="set1Text">
                 <p >
-                  Cultures, customs, and identity, such as legends and myths, are being lost due to a lack of communication between generations. Therefore, the development and implementation of technologies such as Unity for Fronted and Vuforia Engine for the area of ​​entertaining education with augmented reality is proposed.
+                  Cultures, customs, and identity, such as legends and myths,
+                   are being lost due to a lack of communication between generations. 
+                   Therefore, the development and implementation of technologies such as
+                    Unity for Fronted and Vuforia Engine for the area of ​​entertaining education 
+                    with augmented reality is proposed.
                 </p>  
               </div> 
                
@@ -123,38 +100,45 @@
         ></section-header>
 
  
+         <div>
+            <h2>
+              Architecture design for the AREdutainmentUPS software
+            </h2>
+            <h3 style="color: aliceblue;">
+              A logical architecture of the mobile application's operation is developed, divided by layers.
+            </h3> 
+              <img class="imgCentral" src="assets/images/Sprints-Arquitectura.jpg" alt=""> 
+          </div>
+
         <div class="grid grid-cols-4 gap-6 md:grid-cols-2">
            
+
+
            <project-card
-            name="Architecture design for the AREdutainmentUPS software"
-            description="A logical architecture of the mobile application's operation is developed, divided by layers"
-            image="assets/images/Sprints-Arquitectura.jpg" 
-          style="height: 600px;  width:800px; " class="CardService"> </project-card>
-            
-          <div><h1></h1></div>
-           <project-card
-            name="Development of virtual environment and UI interface for the Movily application, consuming microservices"
-            description="The software development is based on the C# language and the Frontend is implemented with Unity and Vuforia Engine, creating 3D Objects for communication."
-            image="assets/images/SegundoCorte.gif" 
-          > </project-card>
-          
-           <project-card
-            name="Femtobot - AI Agent Educativo"
-            description="Plantilla mínima para agentes conversacionales en
-             Python (inspirado en 'nanobot')."
+            name="Implementation of full REST, through the institution's servers."
+            description="The available microservices are validated for implementation and testing with Swagger and Postman."
             image="assets/images/SwaggerServices.png" 
             
             > </project-card> 
  
+            
            <project-card
-            name="Development of virtual environment and UI interface for the Movily application, consuming microservices"
-            description="The software development is based on the C# language and the Frontend is implemented with Unity and Vuforia Engine, creating 3D Objects for communication."
+            name="Target image tracking and applying Vuforia augmented reality implemented in the mobile application."
+            description="TThe configuration of the target images for tracking with the Android device camera is carried out, for the interaction of the real environment with the virtual environment."
             image="assets/images/ImagenesVuforiatarg.png" 
           > </project-card> 
-
+          
            <project-card
             name="Development of virtual environment and UI interface for the Movily application, consuming microservices"
             description="The software development is based on the C# language and the Frontend is implemented with Unity and Vuforia Engine, creating 3D Objects for communication."
+            image="assets/images/video.gif" 
+          > </project-card>
+          
+
+           <project-card
+            name="Mobile application deployment on the PlayStore, configuring domain in Google Cloud."
+            description="Google Cloud configurations are carried out to use a domain and then publish the application on Google Play.
+             Configuring the available permissions and validating compatibility with Android devices."
             image="assets/images/playstore.png" 
           > </project-card>
 
@@ -171,11 +155,11 @@
           sub="A mobile application is developed for mobile devices, based on research on the selected culture. An environment similar to the myth or legend is developed to manage events and communication through Microservices and Unity, digital technology such as VuforiaEngine augmented reality for camera interaction with its configured tag tracking, validating the data in C# and Postman, which allows us to consume backend microservices to interact with 3D objects."
         ></section-header>
         
+        
           <project-card 
             name="Development of virtual environment and UI interface for the Movily application, consuming microservices"
             description="The software development is based on the C# language and the Frontend is implemented with Unity and Vuforia Engine, creating 3D Objects for communication."
-            image="assets/images/finalGame.gif" 
-            style="height: 600px;  width:800px; "
+            image="assets/images/finalGame.gif"  
           > </project-card>
 
 

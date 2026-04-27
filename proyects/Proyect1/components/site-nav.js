@@ -52,10 +52,10 @@ class SiteNav extends HTMLElement {
       </div>
       <div id="site-nav-mobile" class="hidden border-t border-border bg-background/95 px-4 pb-4 sm:hidden">
         <nav class="flex flex-col gap-1 pt-2" aria-label="Menú móvil">
-          <a href="#articles" class="rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-card hover:text-foreground">Articulos</a>
-          <a href="#contact"  class="rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-card hover:text-foreground">Contacto</a>
-          <a href="https://resume.rafnixg.dev" target="_blank" rel="noopener noreferrer" class="rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-card hover:text-foreground">CV</a>
-          <a href="projects.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-primary hover:bg-card">Todos los Proyectos →</a>
+          <a href="#articles" class="rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-card hover:text-foreground">Problematic</a>
+          <a href="#contact"  class="rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-card hover:text-foreground">Solution</a>
+          <a href="https://resume.rafnixg.dev" target="_blank" rel="noopener noreferrer" class="rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-card hover:text-foreground">Results</a>
+         
         </nav>
       </div>`;
 

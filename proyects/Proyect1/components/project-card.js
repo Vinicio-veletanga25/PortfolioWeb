@@ -61,14 +61,18 @@ class ProjectCard extends HTMLElement {
 
     this.innerHTML = `
       ${imgHtml}
-      <div class="flex flex-1 flex-col gap-4 p-6">
+      <div class="">
+
         <div class="flex flex-wrap items-start justify-between gap-2">
+        
           <h3 class="text-xl font-bold leading-snug">${this._esc(name)}</h3>
           ${entityHtml}
         </div>
+
         <p class="flex-1 text-sm text-muted-foreground">${this._esc(description)}</p>
         <div class="flex flex-wrap gap-2">${tagsHtml}</div>
-        <img  src="${this._esc(image)}" alt="Avatar" style="height: 500px; justify-content: center; width:700px; border-radius: 30px; display: flex; margin: auto;">
+
+        <img   src="${this._esc(image)}" alt="Avatar" style="height: 500px; justify-content: center; width:700px; border-radius: 30px; display: flex; margin: auto;">
           
         </a>
       </div>`;

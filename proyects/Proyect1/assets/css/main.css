@@ -818,7 +818,7 @@ h6 {
 
 .timeline-content .title {
   font-weight: 500;
-  color: #b1b1b1;
+  color: #fffefe;
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 5px;
@@ -827,9 +827,9 @@ h6 {
 .timeline-content .birth::before {
   content: "\f1fd";
   position: relative;
-  color: #c5a7a7;
+  color: #ffffff;
   margin-right: 5px;
-  -webkit-text-stroke: 1px #d39c68;
+  -webkit-text-stroke: 1px #e8e7e5;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
 }
@@ -837,18 +837,18 @@ h6 {
 .timeline-content .education::before {
   content: "\f19d";
   position: relative;
-  color: #c5a7a7;
+  color: #fdfdfd;
   margin-right: 5px;
-  -webkit-text-stroke: 1px #d39c68;
+  -webkit-text-stroke: 1px #ffffff;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
 }
 
-.timeline-content .school::before {
+.school::before {
   content: "\e56b";
   position: relative;
-  color: #c5a7a7;
-  -webkit-text-stroke: 1px #d39c68;
+  color: #f6f6f6;
+  -webkit-text-stroke: 1px #ffffff;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -857,9 +857,9 @@ h6 {
 .timeline-content .job::before {
   content: "\f0b1";
   position: relative;
-  color: #c5a7a7;
+  color: #ffffff;
   margin-right: 5px;
-  -webkit-text-stroke: 1px #d39c68;
+  -webkit-text-stroke: 1px #f1ede9;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
 }
@@ -867,8 +867,8 @@ h6 {
 .timeline-content .company::before {
   content: "\f1ad";
   position: relative;
-  color: #c5a7a7;
-  -webkit-text-stroke: 1px #d39c68;
+  color: #ffffff;
+  -webkit-text-stroke: 1px #fdfdfd;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -877,13 +877,21 @@ h6 {
 .timeline-content .sub-title {
   font-size: 16px;
   font-weight: normal;
-  color: #b1b1b1;
+  color: #fffdfd;
+  background-color: #ffffff;
   margin-bottom: 10px;
 }
 
-.timeline-content .description {
-  color: #6e6e6e;
-}
+.timeline-content .description  {
+  content: "\f1ad";
+  position: relative;
+  color: #eeecec;
+  -webkit-text-stroke: 1px #fdfdfd;
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+} 
+ 
 
 .timeline-content .globe::before {
   content: "\f57e";
@@ -897,13 +905,14 @@ h6 {
 
 .timeline-content p {
   font-size: 16px;
+  color: #eeecec;
   font-family: "Lato", sans-serif;
   font-weight: 300;
 }
 
 .timeline-content .date {
   font-size: 12px;
-  color: #6e6e6e;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 10px;
   letter-spacing: 2px;
@@ -912,8 +921,8 @@ h6 {
 .timeline-content .date::before {
   content: "\f783";
   position: relative;
-  color: #d39c6850;
-  -webkit-text-stroke: 1px #d39c68;
+  color: #ffffff50;
+  -webkit-text-stroke: 1px #ffffff;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -1527,7 +1536,7 @@ footer .support ul li a:hover {
   }
 
   .timeline ul li:hover::before {
-    background-color: #d39c68;
+    background-color: #fcfcfc;
     scale: 120%;
   }
 
